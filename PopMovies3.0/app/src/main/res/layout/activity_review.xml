@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:id="@+id/sv_review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ReviewActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description_backdrop"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/iv_movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/content_description_poster"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_backdrop" />
+
+            <TextView
+                android:id="@+id/tv_review_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="144dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="@dimen/detail_padding"
+                android:text="@string/review_by"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_backdrop" />
+
+            <TextView
+                android:id="@+id/tv_review_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="@dimen/detail_padding"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toRightOf="@+id/tv_review_by"
+                app:layout_constraintBaseline_toBaselineOf="@id/tv_review_by"/>
+
+            <TextView
+                android:id="@+id/tv_review_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/detail_padding"
+                android:paddingEnd="@dimen/detail_padding"
+                android:paddingLeft="@dimen/detail_padding"
+                android:paddingRight="@dimen/detail_padding"
+                android:paddingStart="@dimen/detail_padding"
+                android:textColor="@android:color/black"
+                app:layout_constraintTop_toBottomOf="@id/tv_review_author"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="title_movie_detail">Movie Detail</string>
+
+    <string name="action_sort_popularity">Sort by popularity</string>
+    <string name="action_sort_best_rated">Sort by best rated</string>
+
+    <string name="movie_not_found">Movie not found</string>
+    <string name="movie_poster">Movie poster</string>
+    
+    <string name="error">An error has occurred.</string>
+
+    <string name="invalid_response">Invalid response from server</string>
+    <string name="no_response">Unable to get response from server. Please check your internet connection and try again.</string>
+    <string name="network_error" />
+
+    <string name="content_description">moviePosterImage</string>
+    <string name="appbar_scrolling_view_behavior" />
+    <string name="detail_overview">Overview</string>
+    <string name="detail_vote_average">Average Vote</string>
+    <string name="detail_release_date">Release Date</string>
+
+    <string name="rating">Rating</string>
+    <string name="original_title">Original Title</string>
+    <string name="reviews">Reviews</string>
+    <string name="trailers">Trailers</string>
+    <string name="content_description_play_button">play video button</string>
+    <string name="review_by">Author</string>
+    <string name="detail_content_more">(more…)</string>
+    <string name="detail_content_ellipsis">…</string>
+    <string name="detail_error_message">Movie info not available</string>
+    <string name="main_network_error">The network is not responding.</string>
+    <string name="review_title">Review</string>
+    <string name="main_favorites_empty">You have not chosen any favorite movies yet!</string>
+    <string name="main_error_message">Oops! An error has occurred.</string>
+    <string name="content_description_poster">movie poster image</string>
+    <string name="content_description_favorite_button">favorites button</string>
+    <string name="content_description_backdrop">backdropUrl</string>
+
+    <string name="action_bar_spinner">actionBarSpinner</string>
+    <string name="sort_options">SORT OPTIONS</string>
+
+</resources>
